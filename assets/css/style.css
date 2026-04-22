@@ -41,3 +41,50 @@ a {
 a:hover{
     color: red;
 }
+
+
+/* styling the header */
+/* I want to style the header {
+    change the minimum width: make it full width;
+} */
+
+.main-banner {
+    min-width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/profile.jfif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main-banner-text {
+    color: white;
+}
+
+.about {
+    max-width: 70vw;
+    min-height: 40vh;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+
+}
+
+.about-image{
+width: 60%;
+}
+
+@media screen and (max-width: 480px) {
+body {
+    background-color: red;
+}
+}
+
+
