@@ -5,26 +5,12 @@ exports.createStudent = async (req, res) => {
     const student = await studentService.createStudent(req.body);
 
     res.status(201).json({
-      message: 'Student created',
-      data: student,
+      message: 'Student create',
+      data: student
     });
-  } catch (error) {
+  }catch (error) {
     res.status(500).json({
-      error: error.message,
-    });
-  }
-};
-
-exports.getStudents = async (req, res) => {
-  try {
-    const students = await studentService.getStudents();
-
-    res.json({
-      data: students,
-    });
-  } catch (error) {
-    res.status(500).json({
-      error: error.message,
-    });
+      error: error.message
+    })
   }
 };
